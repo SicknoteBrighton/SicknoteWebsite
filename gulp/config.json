@@ -1,0 +1,25 @@
+{
+    "global":{
+        "cssDirectory":"css/",
+        "fontsDirectory":"fonts/",
+        "sourceDirectory":"src",
+        "imagesDirectory":"images/",
+        "tsConfigFileName":"tsconfig.json",
+        "typeScriptDefinitions":"./typings/main/**/*.ts",
+        "systemConfigfileName":"systemjs.config.js",
+        "libDirectory":"lib/"
+    },
+    "src":{
+        "applicationJs":["./src/**/*.js", "!./src/lib**"],
+        "applicationFiles":"src/**/*.*",
+        "applicationFonts":"src/fonts/**/*.*",
+        "applicationHtml":"src/**/*.html",
+        "applicationSass":"src/sass/**/*.*",
+        "applicationImages":["src/images/", "src/images/**/*.*"],
+        "applicationTypeScript":"src/app/**/*.ts",
+        "directory":"./src/"
+    },
+    "dev":{
+        "dest":"./build/dev/"
+    }
+}

@@ -1,0 +1,5 @@
+{
+  "port": 8123,
+  "server": { "baseDir": "./build/dev/" },
+  "browser":["chrome"]
+}

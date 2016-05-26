@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "BROKEN15";
+    src: url("/fonts/BROKEN15.eot");
+    src: local("BROKEN15"), url("/fonts/BROKEN15.ttf") format("truetype");
+    font-weight: normal; font-style: normal; 
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-family: BROKEN15;
+}
