@@ -15,7 +15,7 @@ gulp.task('build', () => {
 
 gulp.task('watch', ['watch-html-src', 'watch-images-src',
                     'watch-sass-src', 'watch-ts-src',
-                    'watch-deletes-src','watch-fonts-src']);
+                    'watch-deletes-src','watch-fonts-src','watch-css-src']);
 
 gulp.task('help', plugins.taskListing);
 gulp.task('default', ['help']);

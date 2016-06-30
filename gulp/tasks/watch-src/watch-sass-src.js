@@ -7,7 +7,11 @@ gulp.task('watch-sass-src', () => {
             function(file)
             {
                 gulpService.log('SASS changed' + ' (' + file.path + ')');
-                return gulpService.compileAndCopySass(file.path, config.dev.dest + config.global.cssDirectory)
+
+                try {
+                    return gulpService.compileAndCopySass(file.path, config.dev.directory + config.global.cssDirectory)}
+                catch(e) { 
+                }
             }
         );
     });

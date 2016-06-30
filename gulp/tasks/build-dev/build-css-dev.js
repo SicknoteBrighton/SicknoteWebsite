@@ -4,5 +4,6 @@ var config = require('../../config.json');
 
 gulp.task('build-css-dev', () => {
     gulpService.log('Copy all css to dev');
-    return gulpService.copyFiles(config.src.directory + config.global.cssDirectory + '**/*.css', config.dev.dest);
+    gulpService.log(config.src.directory + config.global.cssDirectory);
+    return gulpService.copyFiles(config.src.directory + config.global.cssDirectory + '**/*.css', config.dev.directory + config.global.cssDirectory);
 });

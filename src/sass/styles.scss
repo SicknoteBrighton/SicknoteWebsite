@@ -1,6 +1,14 @@
+/* ---------------------
+
+- general 
+- bootstrap overrides 
+
+*/ 
+
+
 @font-face {
     font-family: "BROKEN15";
-    src: url("/fonts/BROKEN15.eot");
+    src: url("/fonts/BROKEN15.ttf");
     src: local("BROKEN15"), url("/fonts/BROKEN15.ttf") format("truetype");
     font-weight: normal; font-style: normal; 
     font-smooth: always;
@@ -10,3 +18,100 @@
 h1 {
     font-family: BROKEN15;
 }
+   
+body{
+    height:100vh;
+    width:100%;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,242528+100 */
+background: rgb(0,0,0); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(36,37,40,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(36,37,40,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(36,37,40,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#242528',GradientType=0 ); /* IE6-9 */
+
+background-repeat: no-repeat;
+}
+
+nav{
+    height:50px;   
+    position: relative;  
+    
+  
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#242528+0,000000+100 */
+background: rgb(36,37,40); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(36,37,40,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(36,37,40,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(36,37,40,1) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242528', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+border-bottom:3px solid #333;
+}
+
+#sicknote_container {
+    border-bottom:3px solid #111;
+    text-align: center;
+    color:#fff;
+    margin:0 0 15px 0;
+}
+
+#sicknote_container{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+// background: #45484d; /* Old browsers */
+// background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6-15 */
+// background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+// background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+background: url(/images/maxresdefault.jpg);
+background-size: cover;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+background-image: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100% url(/images/maxresdefault.jpg)); /* FF3.6-15 */
+background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100% url(/images/maxresdefault.jpg)); /* Chrome10-25,Safari5.1-6 */
+background-image: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100% url('/images/maxresdefault.jpg')); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+
+
+  width: 100%;
+    height:100%;
+}
+
+#sicknote_container h1{
+    margin: 0;
+}
+// bootstrap overrides 
+
+.container-fluid {
+    padding: 0;
+}
+
+.panel-primary .panel-heading{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaea0e+0,e8dc40+100 */
+background: #eaea0e; /* Old browsers */
+background: -moz-linear-gradient(top,  #eaea0e 0%, #e8dc40 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #eaea0e 0%,#e8dc40 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #eaea0e 0%,#e8dc40 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaea0e', endColorstr='#e8dc40',GradientType=0 ); /* IE6-9 */
+
+font-size: 30px;
+font-weight: bold;
+color: #222222;
+}
+
+.panel-primary{
+    background-color: rgba(100,100,100,0.2);
+    border: 1px #555 solid;
+}
+
+.panel-primary{
+    
+}
+
+.masthead-brand h1::before {
+  background-image: url('images/pixelmask.png');
+  height:10px;
+  width:10px;
+  float:left;
+  }

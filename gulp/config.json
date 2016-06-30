@@ -20,6 +20,6 @@
         "directory":"./src/"
     },
     "dev":{
-        "dest":"./build/dev/"
+        "directory":"./build/dev/"
     }
 }

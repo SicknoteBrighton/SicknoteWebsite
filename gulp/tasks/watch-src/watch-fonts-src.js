@@ -8,6 +8,6 @@ gulp.task('watch-fonts-src', () => {
     return plugins.watch(config.src.applicationFonts, (event) => {
 
         gulpService.log('Font added or changed ' + event.path + ', moving to dev' + config.dev.dest);
-        gulpService.copyFiles(event.path, config.dev.dest + config.global.fontsDirectory);
+        gulpService.copyFiles(event.path, config.dev.fontsDirectory + config.global.fontsDirectory);
     });
 });

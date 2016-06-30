@@ -7,7 +7,7 @@ gulp.task('watch-html-src', () => {
             function(file)
             {
                 gulpService.log('Html changed' + ' (' + file.path + ')');
-                return gulpService.copyFiles(file.path, config.dev.dest);
+                return gulpService.copyFiles(file.path, config.dev.directory);
             }
         );
     });

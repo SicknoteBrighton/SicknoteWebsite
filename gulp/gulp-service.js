@@ -51,6 +51,7 @@ module.exports =
     {
         return gulp
              .src(sourcePath)
+             .pipe(plugins.print())
              .pipe(gulp.dest(detinationPath));
     }
 }

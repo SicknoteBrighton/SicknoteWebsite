@@ -9,7 +9,7 @@ gulp.task('watch-images-src', () => {
             if (event.event === 'unlink') {
                 return;
             }
-            return gulpService.compressAndCopyImages(event.path, config.dev.dest);
+            return gulpService.compressAndCopyImages(event.path, config.dev.directory);
         }
         );
 });
