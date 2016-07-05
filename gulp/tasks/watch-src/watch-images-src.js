@@ -4,7 +4,7 @@ var gulpService = require('../../gulp-service');
 var plugins = require('gulp-load-plugins')({lazy:true});
 
 gulp.task('watch-images-src', () => {
-        return plugins.watch('src/images/**/*.{bmp|png}', (event) => {
+        return plugins.watch('src/images/**/*.{bmp|png|jpg}', (event) => {
 
             if (event.event === 'unlink') {
                 return;
